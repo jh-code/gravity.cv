@@ -21,8 +21,7 @@
             </p>
 
             <p>
-              <a href="#contact"
-                style="margin-top: 1em;"
+              <a href="#contact" style="margin-top: 1em;"
                 class="bg-red-600 text-white active:bg-red-700 text-xs font-bold uppercase px-4 py-2 rounded shadow hover:shadow-lg outline-none focus:outline-none lg:mr-1 lg:mb-0 ml-3 mb-3 ease-linear transition-all duration-150"
                 type="button">
                 <i class="fas fa-arrow-alt-circle-down"></i> Contact Us
@@ -363,7 +362,8 @@
         <div class="w-full lg:w-3/12 px-4 text-center">
           <div
             class="text-blueGray-800 p-3 w-12 h-12 shadow-lg rounded-full bg-white inline-flex items-center justify-center">
-            <i class="fas fa-medal text-xl"></i>
+
+            <fa-icon [icon]="icons.faMagnifyingGlass" class="text-xl" />
           </div>
           <h6 class="text-xl mt-5 font-semibold text-white">
             Discovery
@@ -376,7 +376,7 @@
         <div class="w-full lg:w-3/12 px-4 text-center">
           <div
             class="text-blueGray-800 p-3 w-12 h-12 shadow-lg rounded-full bg-white inline-flex items-center justify-center">
-            <i class="fas fa-poll text-xl"></i>
+            <fa-icon [icon]="icons.faCode" class="text-xl" />
           </div>
           <h5 class="text-xl mt-5 font-semibold text-white">
             Development
@@ -389,12 +389,12 @@
         <div class="w-full lg:w-3/12 px-4 text-center">
           <div
             class="text-blueGray-800 p-3 w-12 h-12 shadow-lg rounded-full bg-white inline-flex items-center justify-center">
-            <i class="fas fa-lightbulb text-xl"></i>
+            <fa-icon [icon]="icons.faGlobe" class="text-xl" />
           </div>
           <h5 class="text-xl mt-5 font-semibold text-white">Delivery</h5>
           <p class="mt-2 mb-4 text-blueGray-400">
             We handle setting up your domain name, server, and
-            deployment of your website to a live website!
+            deployment of your website to your server!
           </p>
         </div>
       </div>
