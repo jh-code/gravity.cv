@@ -21,12 +21,13 @@ export class App {
     faCoffee, faTrophy, faPenNib, faCode, faFaceSmileBeam, faMagnifyingGlass, faGlobe
   };
 
+  public isSubmitted = false;
+
   name: string = '';
   email: string = '';
   message: string = '';
 
   public sendEmail() {
-    console.log(this.name, this.email, this.message);
     const formData = {
       name: this.name,
       email: this.email,
@@ -39,7 +40,7 @@ export class App {
       .then(
         () => {
           console.log('SUCCESS!');
-          // Add success message or redirect logic here
+          this.isSubmitted = true;
         },
         (error) => {
           console.log('FAILED...', (error as EmailJSResponseStatus).text);
