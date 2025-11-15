@@ -8,6 +8,7 @@ import { Header } from './components/header/header';
 
 import emailjs, { type EmailJSResponseStatus } from '@emailjs/browser';
 import { FormsModule } from '@angular/forms';
+import { NgIf } from '@angular/common';
 
 @Component({
   selector: 'app-root',
